@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassie's Kanvas - Glitter Tumblers</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffb6c1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+            color: #fff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe4e1;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff0f5;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px 0;
+            color: #ff69b4;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff1493;
+        }
+
+        footer {
+            background-color: #ffb6c1;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kassie's Kanvas</h1>
+        <nav>
+            <a href="#products">Glitter Tumblers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Custom Glitter Tumblers ✨</h2>
+        <p>Choose your colors and make your tumbler sparkle!</p>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x250.png?text=Pink+Glitter" alt="Pink Glitter Tumbler">
+                <h3>Pink Glitter</h3>
+                <p>Customizable pink glitter tumbler, perfect for gifts or yourself.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x250.png?text=Blue+Glitter" alt="Blue Glitter Tumbler">
+                <h3>Blue Glitter</h3>
+                <p>Shiny blue glitter tumbler, add your name or favorite color!</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x250.png?text=Purple+Glitter" alt="Purple Glitter Tumbler">
+                <h3>Purple Glitter</h3>
+                <p>Custom purple glitter tumbler to brighten up your day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me 📧</h2>
+        <p>Have a custom order in mind? Send me a message!</p>
+        <form class="contact-form" action="mailto:kassiemillerrr@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2026 Kassie's Kanvas. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
